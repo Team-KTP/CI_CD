@@ -2,5 +2,5 @@ spring:
   profiles:
     default: local-env
     group:
-      local-env: aws
-      dev-env: aws
+      local-env: aws, local
+      dev-env: aws, local
