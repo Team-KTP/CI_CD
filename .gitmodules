@@ -1,0 +1,3 @@
+[submodule "CI_CD_SUBMODULE"]
+	path = CI_CD_SUBMODULE
+	url = https://github.com/Team-KTP/CI_CD_SUBMODULE.git
