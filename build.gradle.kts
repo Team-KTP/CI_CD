@@ -38,6 +38,16 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+tasks.register<Copy>("copyPrivate") {
+    from("./SMU-LIKELION2-PROJECT-TEAM-1-SUBMODULE")
+    include("*.yml")
+    into("src/main/resources")
+}
+
+tasks.named("processResources") {
+    dependsOn("copyPrivate")
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }

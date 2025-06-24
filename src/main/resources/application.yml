@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    default: local-env
+    group:
+      local-env: aws
+      dev-env: aws
