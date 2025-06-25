@@ -3,4 +3,4 @@ spring:
     default: local-env
     group:
       local-env: aws, local
-      dev-env: aws, local
+      dev-env: aws, dev
